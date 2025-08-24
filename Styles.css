@@ -209,20 +209,6 @@ body {
     transform: translateY(-5px);
 }
 
-    .cert-button {
-    display: inline-block; /* Allows padding and margins to work */
-    padding: 12px 25px; /* Adds space inside the "button" */
-    background-color: #3498db; /* A nice blue background */
-    color: white; /* White text */
-    text-decoration: none; /* Removes the default underline from the link */
-    border-radius: 5px; /* Rounds the corners */
-    font-weight: bold; /* Makes the text bold */
-}
-
-.cert-button:hover {
-    background-color: #2980b9; /* Darker blue when hovered over */
-}
-
 /* Project 3 - Terminal Effects */
 .project-3 {
     border: 1px solid var(--primary-color);
@@ -327,3 +313,76 @@ body {
     border: 2px solid var(--primary-color);
     border-radius: 5px;
     transition: all 
+    
+/* ============================================
+   Styles for the Certificates Page (certificates.html)
+   ============================================ */
+
+/* Header specifically for the certificates page */
+.cert-header {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: #2c3e50;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+/* Main container for the grid of certificates */
+.cert-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Individual certificate card */
+.cert-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.cert-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Certificate image */
+.cert-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 2px solid #eee;
+}
+
+/* Certificate title */
+.cert-card h2 {
+    padding: 1rem;
+    margin: 0;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+/* Verify Button - specific to cert cards */
+.cert-btn {
+    display: block;
+    background-color: #006400;
+    color: white;
+    padding: 0.8rem;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+}
+.cert-btn:hover {
+    background-color: #008000;
+}
+
+/* Footer specifically for the certificates page */
+.cert-footer {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+}
