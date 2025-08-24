@@ -209,6 +209,20 @@ body {
     transform: translateY(-5px);
 }
 
+    .cert-button {
+    display: inline-block; /* Allows padding and margins to work */
+    padding: 12px 25px; /* Adds space inside the "button" */
+    background-color: #3498db; /* A nice blue background */
+    color: white; /* White text */
+    text-decoration: none; /* Removes the default underline from the link */
+    border-radius: 5px; /* Rounds the corners */
+    font-weight: bold; /* Makes the text bold */
+}
+
+.cert-button:hover {
+    background-color: #2980b9; /* Darker blue when hovered over */
+}
+
 /* Project 3 - Terminal Effects */
 .project-3 {
     border: 1px solid var(--primary-color);
