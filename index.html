@@ -3,44 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Creative Portfolio</title>
+    <title>Portfolio - Hacking the Mainframe</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Matrix background styles */
-        body {
-            position: relative;
-            overflow-x: hidden;
-        }
-        
-        #matrix-bg {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            background-color: black;
-        }
-        
-        /* Make sure content is readable over the matrix background */
-        #welcome-section,
-        #projects,
-        #contact {
-            background-color: rgba(0, 0, 0, 0.7);
-        }
-    </style>
 </head>
 <body>
     <!-- Matrix background canvas -->
     <canvas id="matrix-bg"></canvas>
-    
+
     <!-- Your existing content -->
     <nav id="navbar">
         <ul>
             <li><a href="#welcome-section">Home</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a id="profile-link" href="https://github.com" target="_blank">GitHub</a></li>
+            <li>
+                <a id="profile-link" href="https://github.com" target="_blank">GitHub</a>
+            </li>
         </ul>
     </nav>
 
@@ -56,13 +34,13 @@
         <div class="projects-grid">
             <!-- Project 1 with Glowing Borders and Neon Effects -->
             <div class="project-tile project-1">
-                <a href="https://www.weather.com>White Rabbit Weather">
+                <a href="https://www.weather.com">
                     <img src="https://via.placeholder.com/300x200/000000/00FF00?text=Weather+App" alt="Project 1">
                     <h3>White Rabbit Weather App</h3>
                     <p>A responsive weather application using API data</p>
                 </a>
             </div>
-            
+
             <!-- Project 2 with Binary Code Pattern -->
             <div class="project-tile project-2">
                 <a href="certificates.html" class="cert-button">
@@ -71,7 +49,7 @@
                     <p>My Certificates</p>
                 </a>
             </div>
-            
+
             <!-- Project 3 with Terminal Effects -->
             <div class="project-tile project-3">
                 <a href="https://example.com/project3" target="_blank">
@@ -80,7 +58,7 @@
                     <p>Productivity app with drag-and-drop functionality</p>
                 </a>
             </div>
-            
+
             <!-- Project 4 with Pixel Corners -->
             <div class="project-tile project-4">
                 <a href="https://example.com/project4" target="_blank">
@@ -101,3 +79,7 @@
             <a href="mailto:example@email.com">Email</a>
         </div>
     </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
